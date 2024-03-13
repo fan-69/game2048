@@ -1,1 +1,97 @@
-
+@media screen and (orientation:landscape) and (max-device-width:900px){
+	html{
+		-webkit-transform:rotate(-90deg);
+		-moz-transform:rotate(-90deg);
+		-ms-transform:rotate(-90deg);
+		-o-transform:rotate(-90deg);
+        transform:rotate(-90deg);
+		-webkit-transform-origin:left top;
+		-moz-transform-origin: left top;
+		-ms-transform-origin: left top;
+		-o-transform-origin: left top;
+        transform-origin: left top;
+		width:320px;
+		position:absolute;
+		top:100%;
+		left:0;
+	}
+}
+body{
+	margin:0px;
+	background-color:#F9F3E3;  
+}
+.but_start {
+	margin: 0 auto;
+	height: 50px;
+	width: 100px;
+	background: #D78B7D;
+	margin: 15px;
+	color: #F9F3E3;
+	position: relative;
+	text-align: center;
+	font-size: large;
+	border-radius: 10px;
+	font-weight: bold;
+}
+#boardcontainer{
+	border:8px solid #D78B7D;
+	width:464px;
+	margin:0px auto;
+	position:relative;
+}
+.boardtile{
+	width:100px;
+	height:100px;
+	border:8px solid #D78B7D; 
+	float:left; 	
+}
+.tile{
+	width: 100px;
+	height: 65px;
+	background-color: #CFC8B5;
+	z-index: 50;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	text-align: center;
+	display: none;
+	font: bold 24px arial;
+	color: #5C5B57;
+	border-radius: 10px;
+	padding-top: 35px;
+	-webkit-box-shadow: 10px 10px 10px 0px;
+	box-shadow: 10px 10px 10px 0px;
+}
+.tile[collor="4"]{background-color:#EAE0C8;}
+.tile[collor="8"]{background-color:#F59563;}
+.tile[collor="16"]{background-color:#3399ff;}
+.tile[collor="32"]{background-color:#ffa333;}
+.tile[collor="64"]{background-color:#cef030;}
+.tile[collor="128"]{background-color:#E8D8CE;}
+.tile[collor="256"]{background-color:#990303;}
+.tile[collor="512"]{background-color:#6BA5DE;}
+.tile[collor="1024"]{background-color:#DCAD60;}
+.tile[collor="2048"]{background-color:#B60022;}
+#scorediv{
+	margin:5px;
+	text-align:center;
+	font:bold 48px arial;
+	color:#CFC8B5;
+}
+.game_over{
+	margin: 0 auto;
+	height: 200px;
+	width: 380px;
+	background-color: #D78B7D;
+	text-align: center;
+	color: #F9F3E3;
+	font-size: 300%;
+	font-weight: bold;
+	opacity: 0.7;
+	display: none;
+	position: absolute;
+	top: 270px;
+	left: 23%;
+	border-radius: 20px;
+	z-index: 100;
+}
